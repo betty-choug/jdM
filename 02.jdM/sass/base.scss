@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.bt {
+    border-top: 1px solid #e0e0e0;
+}
+
+.bb {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.bl {
+    border-left: 1px solid #e0e0e0;
+}
+
+.br {
+    border-right: 1px solid #e0e0e0;
+}

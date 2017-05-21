@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>京东移动端jquery实现</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jQuery/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <div class="jd-layout">
+        <!--头部-->
+        <header>
+            <a href="javascript:void(0)" class="logo"></a>
+            <input type="search" placeholder="请输入要搜索的内容">
+            <span class="glass"></span>
+            <a href="javascript:void(0)" class="login">登录</a>
+        </header>
+        <!--轮播图-->
+        <div class="index-banner">
+            <ul class="banner-imgs clearfix">
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l1.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l2.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l3.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l4.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l5.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l6.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l7.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/l8.jpg" alt=""></a>
+                </li>
+            </ul>
+            <ol class="clearfix">
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl current"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+            </ol>
+        </div>
+        <!--导航区域-->
+        <div class="index-nav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav1.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav2.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav3.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav4.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav5.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav6.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/nav7.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--主要内容区域-->
+        <div class="index-main">
+            <!--掌上秒杀区域-->
+            <section class="secondKill">
+                <div class="top">
+                    <div class="top-left">
+                        <span class="clock"></span>
+                        <span>掌上秒杀</span>
+                        <ul>
+                            <li>0</li>
+                            <li>0</li>
+                            <li>:</li>
+                            <li>0</li>
+                            <li>0</li>
+                            <li>:</li>
+                            <li>0</li>
+                            <li>0</li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <a href="javascript:void(0);">更多&gt;</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);"><img src="images/detail01.jpg" alt=""></a>
+                            <p>￥10.00</p>
+                            <p>￥100.00</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="images/detail02.jpg" alt=""></a>
+                            <p>￥10.00</p>
+                            <p>￥100.00</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="images/detail01.jpg" alt=""></a>
+                            <p>￥10.00</p>
+                            <p>￥100.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--京东超市-->
+            <section>
+                <div class="top">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="bottom clearfix">
+                    <a class="fl br"><img src="images/cp1.jpg"></a>
+                    <a class="fr bb"><img src="images/cp2.jpg"></a>
+                    <a class="fr"><img src="images/cp3.jpg"></a>
+                </div>
+            </section>
+            <section>
+                <div class="top">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="bottom clearfix">
+                    <a class="fr bl"><img src="images/cp4.jpg"></a>
+                    <a class="fl bb"><img src="images/cp5.jpg"></a>
+                    <a class="fl"><img src="images/cp6.jpg"></a>
+                </div>
+            </section>
+            <section>
+                <div class="top">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="bottom clearfix">
+                    <a class="fl br"><img src="images/cp1.jpg"></a>
+                    <a class="fr bb"><img src="images/cp2.jpg"></a>
+                    <a class="fr"><img src="images/cp3.jpg"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function() {
+        // 选择元素 操作元素
+        $("header").css("backgroundColor", "rgba(201,21,35,0)");
+        $(window).scroll(function() {
+            var alpha = $(document.body).scrollTop() / $(".index-banner").height();
+            if (alpha > 0.8) {
+                alpha = 0.8;
+            }
+            $("header").css("backgroundColor", "rgba(201,21,35," + alpha + ")");
+        });
+        //倒计时
+        var totalSec = 3 * 60 * 60;
+        var timeId = setInterval(function() {
+            totalSec--;
+            if (totalSec < 0) {
+                // 清除定时器
+                clearInterval(timeId);
+                // 提示用户 错过了机会
+                // 移动端 是可以使用 alert弹框
+                alert('这一次的抢购没有了哦,😍,下一次可以再来');
+                // 防止后续代码执行
+                return;
+            }
+            //格式化时分秒
+            // 3888s 3888/3600=1.x
+            var hour = Math.floor(totalSec / 3600);
+            //3888s  3888%3600=288/60=4.x
+            var minutes = Math.floor(totalSec % 3600 / 60);
+            //
+            var second = Math.floor(totalSec % 60);
+            $('.top-left ul li').eq(0).html(Math.floor(hour / 10));
+            $('.top-left ul li').eq(1).html(Math.floor(hour % 10));
+            $('.top-left ul li').eq(3).html(Math.floor(minutes / 10));
+            $('.top-left ul li').eq(4).html(Math.floor(minutes % 10));
+            $('.top-left ul li').eq(6).html(Math.floor(second / 10));
+            $('.top-left ul li').eq(7).html(Math.floor(second % 10));
+
+        }, 100)
+    })
+</script>

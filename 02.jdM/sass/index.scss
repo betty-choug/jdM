@@ -1,0 +1,247 @@
+                @import 'normalize.scss';
+                @import 'base.scss';
+                $jdRed:rgb(201, 21, 35);
+                .jd-layout {
+                    // 头部
+                    header {
+                        width: 100%;
+                        height: 40px;
+                        background-color: $jdRed;
+                        padding: 0 60px;
+                        line-height: 40px;
+                        z-index: 999;
+                        position: relative;
+                        a {
+                            height: 40px;
+                            line-height: 40px;
+                            position: absolute;
+                            padding: 0 10px;
+                            top: 0px;
+                            &.logo {
+                                width: (114px/2);
+                                height: (42px/2);
+                                background: url(../images/sprites.png) no-repeat 0 (-218px/2);
+                                background-size: 200px 200px;
+                                left: 0;
+                                top: (40-21)/2*1px;
+                            }
+                            &.login {
+                                right: 5px;
+                            }
+                        }
+                        input {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 30px;
+                            margin-top: 5px;
+                            padding-left: 35px;
+                        }
+                        span.glass {
+                            width: 21px;
+                            height: 21px;
+                            background: url("../images/sprites.png") no-repeat (-118px/2) (-218px/2);
+                            background-size: 200px 200px;
+                            position: absolute;
+                            top: (40-21)/2*1px;
+                            left: (130px/2);
+                        }
+                    }
+                    // 轮播图
+                    .index-banner {
+                        width: 100%;
+                        overflow: hidden;
+                        position: relative;
+                        .banner-imgs {
+                            width: 800%;
+                            li {
+                                width: 12.5%;
+                                float: left;
+                                a {
+                                    width: 100%;
+                                    display: block;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        ol {
+                            position: absolute;
+                            bottom: 4px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            li {
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background-color: #ffffff;
+                                margin-left: 5px;
+                                &.current {
+                                    background-color: yellow;
+                                }
+                            }
+                        }
+                    }
+                    //导航区域
+                    .index-nav {
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-top: 10px;
+                            li {
+                                width: 25%;
+                                a {
+                                    width: 100%;
+                                    display: block;
+                                    img {
+                                        width: 60%;
+                                        display: block;
+                                        margin: 0 auto;
+                                    }
+                                    p {
+                                        color: gray;
+                                        font-size: 12px;
+                                        text-align: center;
+                                        padding-top: 10px;
+                                        padding-bottom: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //内容区域
+                    .index-main {
+                        padding: 10px 5px 0;
+                        background-color: #f5f5f5;
+                        section {
+                            min-height: 100px;
+                            margin-bottom: 20px;
+                            background-color: white;
+                            .top {
+                                height: 32px;
+                                border-bottom: 1px solid #e0e0e0;
+                                h3 {
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 32px;
+                                    position: relative;
+                                    color: #666;
+                                    padding-left: 15px;
+                                }
+                                h3::before {
+                                    content: '';
+                                    width: 2px;
+                                    height: 12px;
+                                    background-color: $jdRed;
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 9px;
+                                }
+                            }
+                            .bottom {
+                                a {
+                                    display: block;
+                                    width: 50%;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            //秒杀区域
+                            &.secondKill {
+                                .top {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .top-left {
+                                        display: flex;
+                                        align-items: center;
+                                        span {
+                                            line-height: 32px;
+                                        }
+                                        span:first-of-type {
+                                            padding: 0 5px;
+                                            width: 20px;
+                                            height: 25px;
+                                            background-image: url("../images/seckill-icon.png");
+                                            background-position: center;
+                                            background-size: 20px 25px;
+                                            margin-right: 5px;
+                                        }
+                                        span:last-of-type {
+                                            font-size: 15px;
+                                            color: $jdRed;
+                                        }
+                                        ul {
+                                            li {
+                                                width: 12px;
+                                                height: 16px;
+                                                line-height: 14px;
+                                                float: left;
+                                                background-color: black;
+                                                color: white;
+                                                margin-left: 5px;
+                                                font-size: 12px;
+                                                text-align: center;
+                                            }
+                                            li:nth-child(3n) {
+                                                background-color: #ffffff;
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                    .top-right {
+                                        a {
+                                            color: gray;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                .bottom {
+                                    padding-top: 10px;
+                                    ul {
+                                        display: flex;
+                                        li {
+                                            flex: 1;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                img {
+                                                    width: 60px;
+                                                    display: block;
+                                                    margin: 0 auto;
+                                                }
+                                            }
+                                            p {
+                                                font-size: 12px;
+                                                text-align: center;
+                                                padding: 5px 0;
+                                            }
+                                            p:first-of-type {
+                                                color: $jdRed;
+                                            }
+                                            p:last-of-type {
+                                                color: #666;
+                                                text-decoration: line-through;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //设置最大最小宽度
+                .jd-layout {
+                    min-width: 320px;
+                    max-width: 640px;
+                    width: 100%;
+                    header {
+                        min-width: 320px;
+                        max-width: 640px;
+                        position: fixed;
+                    }
+                }
